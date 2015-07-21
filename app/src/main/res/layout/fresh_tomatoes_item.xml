@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/ivImageThumnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="93dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="poster image"
+        android:src="@drawable/small_movie_poster" />
+
+    <TextView
+        android:id="@+id/tvMovieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/ivImageThumnail"
+        android:text="Millon Dollar Baby"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivImageThumnail"
+        android:layout_below="@+id/tvRating"
+        android:layout_alignLeft="@+id/tvRating"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="This is a test description. This can contain multiple lines of information and contents should automatically wrap"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tvRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvMovieName"
+        android:layout_below="@+id/tvMovieName"
+        android:text="4.0"
+        android:textSize="10sp" />
+
+</RelativeLayout>

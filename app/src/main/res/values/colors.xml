@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <color name="disabled_text">#9FFF</color>
+    <color name="actionbar">#000</color>
+    <color name="background">#111</color>
+
+</resources>
